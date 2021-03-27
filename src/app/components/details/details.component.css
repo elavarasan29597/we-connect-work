@@ -1,0 +1,30 @@
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.details-container {
+    padding: 50px;
+}
+
+mat-card {
+    margin: 20PX;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+mat-card-content p {
+    text-align: center;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -8px;
+    padding-bottom: 0;
+    margin-left: 36px;
+}

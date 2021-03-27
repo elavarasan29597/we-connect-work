@@ -1,0 +1,45 @@
+<mat-toolbar>
+    <img src="../../../assets/connect-log.png" fxFlex="20" fxFlex.md="10" fxFlex.sm="10" fxFlex.lg="8"
+        alt="connect logo">
+    <button fxHide.xs mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <h2>We Connect</h2>
+    </button>
+    <span class="example-spacer"></span>
+    <mat-form-field fxFlex="40%" fxFlex.xs="60%">
+        <mat-label>Serach</mat-label>
+        <input matInput placeholder="Placeholder">
+    </mat-form-field>
+
+
+    <button fxHide.sm fxHide.md fxHide.lg mat-icon-button [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+        </button>
+    </mat-menu>
+    <div fxHide.xs>
+
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>dialpad</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>voicemail</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>notifications_off</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,19 @@
+.multi-image-content img, .events-content {
+    padding: 20px;
+}
+
+.multi-image-content img {
+    max-width: 200px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.multi-image-content img:hover {
+    transform: translate(0, -5px);
+    box-shadow: 11px 13px 8px rgb(0 0 0 / 30%);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: tomato;
+}
